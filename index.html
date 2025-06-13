@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Founder's Copy Blindness | E-commerce Copywriting Audit</title>
+    <style>
+        /* --- Base Mobile-First Styles --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 100%; /* Full width on mobile */
+            margin: 0 auto; /* Centered, but edge-to-edge on mobile */
+            padding: 0;
+            background-color: #fff;
+            box-shadow: none; /* Less shadow emphasis on mobile */
+            border-radius: 0; /* No rounding on mobile edges */
+            overflow: hidden;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 0; /* Remove bottom margin to connect border */
+            padding: 30px 15px; /* Adjusted padding for mobile */
+            /* background: linear-gradient(135deg, #1a253c 0%, #2c5282 100%); */
+            background-color: #fff; /* White background */
+            border-bottom: 1px solid #e2e8f0; /* Add bottom border */
+            border-radius: 0;
+        }
+        header h1 {
+            /* color: #ffffff; */
+            color: #1a253c; /* Dark blue text */
+            font-size: 2em; /* Adjusted for mobile */
+            margin-bottom: 10px;
+            text-shadow: none; /* Remove text shadow */
+        }
+        header h2 {
+            /* color: #e2e8f0; */
+            color: #4a5568; /* Dark gray text */
+            font-size: 1em; /* Adjusted for mobile */
+            font-weight: normal;
+            max-width: 100%; /* Full width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 0 15px; /* Base padding for mobile */
+        }
+        /* Sections with full-width backgrounds need padding */
+        section.story, section.problem-symptoms, section.intro-block, section.guarantee, section.ps, section.offer, section.example-section, section.solution, section.future-pacing, section.differentiation, section.paths, section.final-cta {
+             padding: 10px 15px; /* Keep vertical padding, adjust horizontal - Reduced vertical padding */
+        }
+        .intro-block, .ps {
+             background-color: #f7fafc; /* Subtle background for intro/PS */
+             border-radius: 4px;
+             margin-left: 15px;
+             margin-right: 15px;
+        }
+
+        h2 {
+            color: #1a253c;
+            margin-top: 25px;
+            font-size: 1.6em; /* Adjusted H2 for mobile */
+        }
+        h3 {
+            color: #2c5282;
+            margin-top: 20px;
+            font-size: 1.3em; /* Adjusted H3 for mobile */
+        }
+        .story, .problem-symptoms, .example, .faq q, .ps {
+            background-color: #edf2f7;
+            padding: 15px; /* Adjust padding */
+            border-left: 4px solid #4299e1;
+            margin: 15px 0; /* Adjust margin */
+            border-radius: 4px;
+        }
+        .story p, .problem-symptoms p, .example p, .ps p {
+             margin-bottom: 1em; /* Ensure paragraph spacing */
+        }
+         .pull-quote {
+            font-style: italic;
+            font-size: 1.1em;
+            color: #2c5282;
+            margin: 25px 10px; /* Add margin */
+            padding: 15px;
+            border-left: 4px solid #e53e3e; /* Use accent color */
+            background-color: #edf2f7; /* Slightly darker background */
+            border-radius: 4px;
+             line-height: 1.5; /* Improve readability */
+        }
+
+        .problem-symptoms ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .problem-symptoms li {
+            margin-bottom: 12px;
+            padding-left: 35px; /* Ensure space for icon */
+            position: relative;
+            font-size: 1em; /* Adjust font size */
+        }
+        .problem-symptoms li::before {
+            content: "❌"; /* Consider SVG/FontAwesome later */
+            position: absolute;
+            left: 5px; /* Position icon */
+            top: 1px;
+            font-size: 1.2em;
+            color: #e53e3e; /* Use accent red */
+        }
+        blockquote {
+            font-style: italic;
+            color: #4a5568;
+            border-left: 4px solid #cbd5e0; /* Slightly thicker border */
+            padding: 15px 20px;
+            margin: 20px 0;
+            background-color: #f7fafc;
+            border-radius: 4px;
+            font-size: 1.05em; /* Slightly larger */
+        }
+        .cta-button {
+            display: block; /* Full width on mobile */
+            width: calc(100% - 40px); /* Account for padding */
+            max-width: 350px; /* Max width for larger buttons */
+            margin: 25px auto; /* Center button */
+            background-color: #e53e3e;
+            color: #fff;
+            padding: 15px 20px; /* Adjust padding */
+            text-decoration: none;
+            font-size: 1.1em; /* Adjust font size */
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        .cta-button:hover {
+            background-color: #c53030;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .cta-center {
+            text-align: center;
+        }
+        .package-details ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+        .package-details li {
+            background-color: #ffffff;
+            margin-bottom: 15px;
+            padding: 15px; /* Adjust padding */
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            padding-left: 40px; /* Space for icon */
+            position: relative;
+        }
+         .package-details li::before {
+            content: '✅'; /* Consider SVG/FontAwesome later */
+            position: absolute;
+            left: 12px;
+            top: 16px;
+            color: #38a169;
+            font-size: 1.2em;
+        }
+        .package-details strong {
+            color: #2c5282;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.05em;
+        }
+        .value-price {
+            text-align: center;
+            font-size: 1.1em;
+            margin: 25px 0;
+        }
+        .value-price span {
+            text-decoration: line-through;
+            color: #a0aec0;
+            margin-right: 8px;
+        }
+        .value-price strong {
+            color: #2b6cb0;
+            font-size: 1.5em;
+        }
+        .guarantee {
+            background-color: #ebf8ff; /* Light blue background */
+            padding: 20px;
+            border: 2px solid #bee3f8; /* Slightly stronger border */
+            border-radius: 8px; /* More rounded */
+            margin: 30px 15px; /* Add horizontal margin */
+            text-align: center;
+            border-left: 6px solid #48bb78; /* Prominent LEFT border - Use Positive Green */
+            box-shadow: 0 3px 6px rgba(49, 130, 206, 0.1); /* Subtle shadow */
+        }
+        .guarantee h3 {
+            margin-top: 0;
+            color: #38a169; /* Darker Positive Green */
+            font-size: 1.4em; /* Adjust guarantee heading */
+        }
+         .guarantee::before { /* Optional: Add a guarantee icon */
+            content: "🛡️"; /* Placeholder shield icon */
+            font-size: 2em;
+            display: block;
+            margin-bottom: 10px;
+            color: #48bb78; /* Positive Green */
+        }
+
+        .faq {
+            margin-top: 25px;
+        }
+        /* Basic Accordion Styles (Requires JS for functionality) */
+        .faq dt {
+            font-weight: bold;
+            margin-top: 15px;
+            font-size: 1.05em;
+            padding: 10px;
+            background-color: #edf2f7;
+            border-radius: 4px;
+            cursor: pointer;
+             border-bottom: 1px solid #e2e8f0;
+        }
+        .faq dt::after { /* Simple indicator */
+             content: ' +';
+             float: right;
+             color: #2c5282;
+        }
+         /* Style for active/open accordion item (needs JS class toggle) */
+         /*
+         .faq dt.active::after {
+            content: ' -';
+         }
+         .faq dd {
+            display: none;
+         }
+         .faq dd.active {
+             display: block;
+         }
+         */
+        .faq dd {
+            margin-left: 0;
+            margin-bottom: 15px;
+            padding: 15px; /* Add padding to answer */
+            border-left: 2px solid #e2e8f0;
+            background-color: #fdfdff; /* Slightly different background */
+            border-radius: 0 0 4px 4px;
+            /* display: none; */ /* Hide by default for accordion */
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px 15px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.9em;
+            color: #718096;
+            background-color: #f7fafc;
+            border-radius: 0;
+        }
+
+        .paths {
+            margin-top: 30px;
+            padding: 0 15px; /* Padding for the section */
+        }
+        .paths ul {
+            list-style: none;
+            padding: 0;
+        }
+        .paths li {
+            border: 1px solid #e2e8f0;
+            padding: 20px; /* More padding for card feel */
+            padding-left: 60px; /* Increased padding for icon */
+            margin-bottom: 20px;
+            border-radius: 8px;
+            /* background-color: #ffffff; */ /* Replaced by specific path backgrounds */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Subtle shadow */
+            border-left: 5px solid #4299e1; /* Accent border (default) */
+            position: relative; /* Needed for icon positioning */
+        }
+        .paths li.path-diy {
+            border-left-color: #a0aec0; /* Gray for DIY */
+            background-color: #f8f9fa; /* Very light grey */
+        }
+        .paths li.path-status-quo {
+             border-left-color: #f56565; /* Reddish for Status Quo warning */
+             background-color: #fff5f5; /* Light red */
+        }
+        .paths li.path-expert {
+             border-left-color: #48bb78; /* Green for Expert solution */
+             background-color: #f0fff4; /* Light green */
+        }
+
+        /* Path Icons */
+        .paths li::before {
+            position: absolute;
+            left: 18px; /* Position icon */
+            top: 22px;  /* Align roughly with heading */
+            font-size: 1.8em; /* Adjust size */
+            line-height: 1;
+        }
+        .paths li.path-diy::before { content: '🛠️'; }
+        .paths li.path-status-quo::before { content: '⏳'; }
+        .paths li.path-expert::before { content: '✨'; }
+
+
+        .paths h4 {
+            margin-top: 0;
+            margin-bottom: 10px; /* Space below heading */
+            color: #2c5282;
+            font-size: 1.2em;
+        }
+        .paths strong {
+            font-weight: bold;
+            color: #1a253c; /* Darker color for emphasis */
+        }
+        .paths p {
+             margin-bottom: 0.8em; /* Spacing within path cards */
+             color: #4a5568; /* Slightly lighter text */
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e2e8f0;
+            margin: 30px 15px; /* Adjust margin for mobile */
+        }
+
+        /* --- Styles for Larger Screens (Tablet and Up) --- */
+        @media (min-width: 601px) {
+            .container {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 0; /* Keep padding off container */
+                 box-shadow: 0 0 15px rgba(0,0,0,0.1);
+                 border-radius: 8px;
+            }
+            header {
+                 padding: 40px 20px;
+                 margin-bottom: 0; /* Remove margin */
+            }
+            header h1 {
+                font-size: 2.6em;
+                margin-bottom: 15px;
+            }
+            header h2 {
+                font-size: 1.2em;
+                max-width: 650px;
+            }
+            section {
+                 padding: 0 20px; /* Restore horizontal padding */
+                 margin-bottom: 40px;
+            }
+            section.story, section.problem-symptoms, section.intro-block, section.guarantee, section.ps, section.offer, section.example-section, section.solution, section.future-pacing, section.differentiation, section.paths, section.final-cta {
+                 padding: 15px 30px; /* Larger padding on desktop - Reduced vertical padding */
+            }
+             .intro-block, .ps {
+                 margin-left: 20px; /* Match section padding */
+                 margin-right: 20px;
+            }
+
+            h2 {
+                font-size: 1.8em;
+                margin-top: 30px;
+            }
+            h3 {
+                font-size: 1.4em;
+                margin-top: 25px;
+            }
+             .pull-quote {
+                margin: 30px 40px; /* More margin on desktop */
+                padding: 20px 25px;
+                font-size: 1.2em;
+            }
+            .story, .problem-symptoms, .example, .faq q, .ps {
+                 padding: 20px; /* Restore padding */
+                 margin: 20px 0; /* Restore margin */
+            }
+             .problem-symptoms li {
+                font-size: 1.05em;
+                padding-left: 30px;
+             }
+             .problem-symptoms li::before {
+                 left: 0;
+                 top: 2px;
+                 font-size: 1.1em;
+             }
+            blockquote {
+                padding: 15px 20px;
+                margin: 20px 0;
+                 font-size: 1.1em;
+            }
+            .cta-button {
+                display: inline-block; /* Inline on desktop */
+                width: auto; /* Auto width */
+                max-width: none;
+                padding: 18px 35px; /* Larger padding */
+                font-size: 1.2em;
+                margin: 25px 0; /* Adjust margin */
+            }
+            .package-details ul {
+                margin-top: 20px;
+            }
+            .package-details li {
+                padding: 20px;
+                padding-left: 45px;
+            }
+            .package-details li::before {
+                left: 15px;
+                top: 21px;
+            }
+            .package-details strong {
+                font-size: 1.1em;
+            }
+            .value-price {
+                font-size: 1.2em;
+                margin: 30px 0;
+            }
+            .value-price strong {
+                font-size: 1.6em;
+            }
+            .guarantee {
+                 padding: 25px;
+                 margin: 30px 0; /* No horizontal margin needed if section has padding */
+            }
+            .guarantee h3 {
+                font-size: 1.5em;
+            }
+            .faq {
+                 margin-top: 30px;
+            }
+            .faq dt {
+                font-size: 1.1em;
+                margin-top: 20px;
+            }
+             .faq dd {
+                margin-bottom: 20px;
+                 padding: 15px 20px; /* Adjust padding */
+            }
+            footer {
+                padding: 25px 20px;
+                margin-top: 40px;
+                border-radius: 0 0 8px 8px; /* Round bottom corners */
+            }
+            .paths {
+                 padding: 0 20px; /* Match section padding */
+                 margin-top: 40px;
+            }
+             .paths ul {
+                /* Consider flexbox/grid for side-by-side layout on desktop if desired */
+                 /* display: flex; gap: 20px; */
+             }
+             .paths li {
+                 padding: 25px; /* More padding */
+                 padding-left: 70px; /* Increased desktop padding for icon */
+                 margin-bottom: 25px;
+             }
+              /* Adjust path icon position/size for desktop */
+             .paths li::before {
+                 left: 22px;
+                 top: 27px; /* Adjust vertical position */
+                 font-size: 2em; /* Slightly larger on desktop */
+             }
+             .paths h4 {
+                 font-size: 1.3em;
+             }
+             hr {
+                margin: 40px 0; /* Restore margin */
+             }
+        }
+        /* Specific style overrides if needed for very large screens */
+        @media (min-width: 1025px) {
+            /* Example: Maybe increase max-width slightly */
+            /* .container { max-width: 900px; } */
+        }
+
+        /* Styles for the new story structure */
+        .story-chunk {
+            padding: 15px;
+            margin: 0 0 20px 0; /* Remove horizontal margins, rely on parent section's padding */
+            border-radius: 4px;
+        }
+        .story-chunk:first-child {
+            margin-top: 0; /* Ensure no top margin on the first chunk */
+        }
+        .story-chunk.bg-light { background-color: #f7fafc; } /* Use intro-block bg */
+        .story-chunk.bg-medium { background-color: #edf2f7; } /* Use original story bg */
+        .story-chunk h3 {
+            color: #2c5282;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+        }
+        .highlight-stat {
+            color: #e53e3e; /* Use accent red */
+            font-weight: bold;
+        }
+        /* Remove original story styles if they conflict, keep border for now */
+        section.story {
+              padding: 20px 15px; /* Restore section padding */
+              margin-bottom: 30px; /* Keep bottom margin */
+              background: none; /* Ensure no background */
+              border: none; /* Ensure no border */
+             /* background-color: transparent; /* Remove background */
+             /* border-left: none; Remove border */
+             /* margin: 0; Remove margin */
+             /* border-radius: 0; Remove radius */
+        }
+
+        /* Styles for new story structure on desktop */
+        .story-chunk {
+            padding: 20px 30px; /* More padding */
+            margin: 0 0 30px 0; /* Adjust margin */
+        }
+         .story-chunk:first-child {
+             margin-top: 0;
+         }
+         .story-chunk h3 {
+             font-size: 1.4em;
+             margin-bottom: 15px;
+         }
+         .story, .problem-symptoms, .example, .faq q, .ps {
+             padding: 20px; /* Restore padding */
+             margin: 20px 0; /* Restore margin */
+        }
+
+        /* --- Utility & Highlighting Styles --- */
+        .text-negative {
+            color: #e53e3e; /* Accent Red for negative points/stats */
+            font-weight: bold;
+        }
+        .text-positive {
+            color: #48bb78; /* Green for positive outcomes/stats */
+            font-weight: bold;
+        }
+        .highlight-stat { /* Keep for existing, but prefer text-negative/positive */
+            color: #e53e3e;
+            font-weight: bold;
+        }
+        .subtle-hr {
+            border: 0;
+            height: 1px;
+            background-color: #e2e8f0;
+            margin: 25px 0; /* Adjust spacing as needed */
+        }
+        .problem-list li {
+            color: #4a5568; /* Default text color */
+        }
+        .problem-list li::before {
+            content: "❌";
+            position: absolute;
+            left: 5px;
+            top: 1px;
+            font-size: 1.2em;
+            color: #e53e3e;
+        }
+        .results-list li {
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .results-list li::before {
+            content: '📈'; /* Or ✅ */
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.2em;
+            color: #48bb78; /* Positive green */
+        }
+        .attempt-list li {
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 10px;
+            list-style: none;
+        }
+        .attempt-list li::before {
+            content: '⚠️'; /* Warning/Neutral */
+            position: absolute;
+            left: 0;
+            top: 1px;
+            font-size: 1.1em;
+            color: #dd6b20; /* Orange/Amber */
+        }
+
+        .offer {
+            background-color: #f0f9ff; /* Light blue background */
+            border: 1px solid #bee3f8; /* Matching border */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+             padding: 20px 15px; /* Ensure padding */
+             margin: 30px 15px;
+        }
+        @media (min-width: 601px) {
+             .offer {
+                padding: 25px 30px;
+                margin: 30px 0; /* Remove horizontal margin */
+             }
+        }
+
+        /* --- Section Specific Styles --- */
+        .steps-list {
+            list-style: none;
+            padding: 0;
+            counter-reset: steps-counter;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .step-item {
+            background-color: #f7fafc; /* Light background */
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 15px 20px 15px 55px; /* Space for number */
+            margin-bottom: 15px;
+            position: relative;
+            counter-increment: steps-counter;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .step-item::before {
+            content: counter(steps-counter);
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #4299e1; /* Blue accent */
+            color: #fff;
+            font-weight: bold;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1em;
+        }
+        .step-item strong {
+            font-weight: 600; /* Standard bold */
+        }
+
+        .decision-columns {
+            display: flex;
+            flex-direction: column; /* Stack on mobile by default */
+            gap: 20px;
+            margin: 30px 0;
+            padding: 0 15px; /* Mobile padding */
+        }
+        .decision-column {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            flex: 1; /* Equal width when side-by-side */
+        }
+        .decision-column h4 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        .decision-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .decision-column li {
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 12px;
+            color: #4a5568;
+        }
+        .decision-column li::before {
+            position: absolute;
+            left: 0;
+            top: 1px;
+            font-size: 1.2em;
+        }
+        .decision-column.costs h4 { color: #c53030; } /* Darker Red */
+        .decision-column.costs li::before {
+            content: '❌';
+            color: #e53e3e;
+        }
+        .decision-column.benefits h4 { color: #2f855a; } /* Darker Green */
+        .decision-column.benefits li::before {
+            content: '✅';
+            color: #48bb78;
+        }
+        .decision-column .investment-price {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #2b6cb0; /* Price blue */
+        }
+
+        .urgency-notice {
+            background-color: #fffbeb; /* Light yellow */
+            border: 1px solid #fbd38d; /* Amber border */
+            border-radius: 6px;
+            padding: 15px 20px;
+            margin: 20px 15px; /* Mobile margin */
+            text-align: center;
+            font-weight: bold;
+            color: #b7791f; /* Dark Amber/Brown */
+        }
+        .urgency-notice::before {
+            content: '⚠️ ';
+        }
+
+        @media (min-width: 768px) { /* Tablet and up */
+            .decision-columns {
+                flex-direction: row; /* Side-by-side */
+                padding: 0; /* Remove padding, rely on section */
+            }
+            .urgency-notice {
+                 margin: 30px 0; /* Desktop margin */
+            }
+             .step-item {
+                 padding: 18px 25px 18px 65px; /* Adjust desktop padding */
+             }
+             .step-item::before {
+                 left: 20px;
+                 width: 35px;
+                 height: 35px;
+             }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>"Are You Suffering From <strong>'Founder's Copy Blindness'?</strong> The Hidden Condition Killing <span class="text-negative">83%</span> of E-commerce Stores"</h1>
+            <h2>"Discover the counterintuitive reason your visitors aren't buying (and the <strong>30-day fix</strong> that's saving first-time founders from shutting down their stores)"</h2>
+        </header>
+
+        <section class="story">
+            <div class="story-chunk bg-medium">
+                 <h3 >3:27 AM: The Nightmare Returns</h3>
+                 <p><strong>3:27 AM.</strong> David sat bolt upright, heart hammering against his ribs like it wanted to escape.</p>
+                 <p>Cold sweat. Shallow breathing. <strong>The same nightmare again.</strong></p>
+                 <p>In the dream, he was standing in an empty room, watching helplessly as his fiancée packed their belongings into cardboard boxes. <strong>"You promised this supplement business would work,"</strong> she said, not angry, just disappointed—which was infinitely worse.</p>
+                 <p>In the background, a notification sound kept pinging: another refund request, another chargeback, <span class="text-negative">another day with zero sales</span>.</p>
+            </div>
+
+            <div class="story-chunk bg-light">
+                <h3 >The Brutal Math</h3>
+                <p>He fumbled for his phone in the darkness, the blue light illuminating his haunted face. His fingers moved automatically to the <strong>bookmarked dashboard</strong>.</p>
+
+                <div class="pull-quote">
+                    <p>Still <strong class="text-negative">0.6%</strong> conversion. Still <span class="text-negative">bleeding money</span>.</p>
+                </div>
+
+                <p><strong class="text-negative">$3,278</strong> spent on ads this month. <strong>Eleven sales.</strong> At this rate, his customer acquisition cost was <strong class="text-negative">$298</strong> for products that netted him just <span class="text-positive">$85</span> in profit.</p>
+                <p>The math was brutally simple. <strong>The conclusion, unavoidable.</strong></p>
+
+                 <p>David slipped out of bed, careful not to wake his fiancée. In the kitchen, he opened his laptop and pulled up his bank accounts. The business account showed <strong class="text-negative">$1,742</strong> remaining. His personal savings—the money they'd set aside for emergencies—was down to <strong class="text-negative">$4,500</strong> after the last cash infusion into the business.</p>
+
+                 <p><strong class="text-negative">Three weeks. Maybe four.</strong> That's all he had left before he'd have to admit what he already knew: <strong>his dream of building a successful wellness brand was dying.</strong></p>
+             </div>
+
+             <div class="story-chunk bg-medium">
+                <h3 >Searching for Answers</h3>
+                <p><strong>How would he tell everyone?</strong> His fiancée, who'd supported him quitting his stable project manager job. His parents, who'd bragged about their entrepreneurial son. The small Facebook group of fellow store owners who looked up to him because his product photos were so professional, because his Shopify store looked so polished.</p>
+                <p>None of them knew he was drowning. <strong>He couldn't bear to admit</strong> to friends or his fiancée that <span class="text-negative">sales had completely stalled</span>.</p>
+
+                <p>David opened his ad account again. <strong>The traffic wasn't the problem.</strong> His ads were getting clicks—thousands of them. People were watching his videos, engaging with his posts, even adding products to their carts.</p>
+                <p>But <strong>something was breaking the sales momentum</strong> at the critical moment.</p>
+                <p>His mouse hovered over the <strong>"Pause All Campaigns"</strong> button. One click would stop the bleeding. One click would also mean admitting defeat.</p>
+
+                <p>"Just one more week," he whispered to himself. The same thing he'd whispered last week. And the week before.</p>
+                <p>He'd tried everything the "gurus" suggested—trust badges, countdown timers, free shipping thresholds, redesigned checkout pages. Each change brought a momentary uptick, then <strong>the dismal pattern continued</strong>.</p>
+             </div>
+
+            <div class="story-chunk bg-light">
+                <h3 >A Flicker of Hope?</h3>
+                <p>What David didn't know yet was that these sleepless nights were about to end because of something called the "DIY Copy Blindspot Detector"—a strange discovery that was saving e-commerce stores across the country from the exact situation he was facing.</p>
+                <p>But for now, David closed the laptop and pressed his palms against his eyes until he saw stars. <strong>What had he missed?</strong> The products were good—the few customers who did buy often returned for more. The ads were performing well for engagement. The website looked professional.</p>
+
+                <p>He reached for his phone again, thumbing mindlessly through an ecommerce forum as the kitchen clock ticked toward 4 AM. A post caught his eye:</p>
+                <blockquote>
+                     "I was spending <span class="text-negative">$4K/month</span> on ads with a <strong class="text-negative">0.8%</strong> conversion rate. Ready to quit. Emptied my savings. Hadn't slept in weeks. Then I discovered something called the 'DIY Copy Blindspot Detector' that changed everything. Three weeks later, same ad spend, same traffic, but <strong class="text-positive">3.2%</strong> conversion rate. Store's now doing <span class="text-positive">$27K/month</span> with actual profit. My only regret is not discovering this six months earlier."
+                </blockquote>
+
+                <p>David's finger froze mid-scroll. The post could have been written by him—except for the happy ending.</p>
+                <p>"Yeah, right," he muttered. <strong>Another miracle solution. Another silver bullet.</strong> He'd been down this road before with self-proclaimed "gurus" who promised the moon and delivered nothing but generic advice and empty wallets.</p>
+                <p>He almost scrolled past it. Almost dismissed it entirely.</p>
+                <p>But something in the specificity of those numbers caught his attention. Not "my sales doubled" but "<strong class="text-negative">0.8%</strong> to <strong class="text-positive">3.2%</strong>" — exactly the kind of precise improvement he needed. The post mentioned the same traffic, same ad spend—just fixing something called "blindspots."</p>
+
+                <div class="pull-quote">
+                    <p>"What do I have to lose at this point?" he whispered.</p>
+                </div>
+
+                <p>He clicked "Message" and typed a simple question: <strong>"Is this for real?"</strong> before hitting send.</p>
+                <p>The message landed in my inbox at 4:32 AM.</p>
+            </div>
+        </section>
+
+        <section class="intro-block">
+            <p>What I discovered in David's store that morning would later save hundreds of founders just like him. In fact, if you stay with me for the next few minutes, I'll reveal the exact <strong>3-step pattern that's silently killing your sales</strong>—the same pattern I've now documented across <span class="text-positive">127</span> e-commerce stores.</p>
+            <p>And I promise you this: Once you see it, <strong>you'll never look at your website the same way again.</strong> More importantly, you'll possess the single most valuable skill in e-commerce today—the ability to <span class="text-positive">instantly spot conversion killers</span> that your competitors can't see.</p>
+        </section>
+
+        <hr />
+
+        <section>
+            <h2>Hello, I'm Dinan Nguyen.</h2>
+            <p>After <strong>5 years running my own e-commerce stores</strong> and <strong>3 years consulting for DTC ecommerce brands</strong> on their conversion strategy, I've developed a systematic approach to diagnosing what I call "Founder's Copy Blindness."</p>
+            <p>I started my career in enterprise sales, where I learned firsthand how subtle differences in messaging could make or break million-dollar deals. When I pivoted to e-commerce, I discovered that the same principles applied—but most store owners were missing them completely. That unique combination of high-stakes sales experience and e-commerce expertise is what <strong>led to my breakthrough discovery.</strong></p>
+            <p>That forum post David just found? That was my post. I wrote it after helping the <span class="text-positive">41st</span> store owner escape the exact same situation—a pattern I'd documented through my research with over <span class="text-positive">87</span> DTC brands facing the same invisible problem.</p>
+            <p>David's story isn't fiction. He's case <span class="text-positive">#42</span> in my research files – part of my three-year investigation into why e-commerce stores fail to convert. <strong>I've documented this exact pattern 127 times and counting.</strong></p>
+            <p>I still remember our first call. David looked exhausted, skeptical, and desperate all at once. "I've tried everything," he told me, his voice a mixture of frustration and faint hope. <strong>"But I'm running out of time and money. If this doesn't work..."</strong></p>
+            <p>He didn't need to finish the sentence. I'd heard it before.</p>
+            <p>Let me tell you what David didn't know yet – what most store owners don't know: he was suffering from something I call <strong>"Founder's Copy Blindness."</strong> It's a condition that makes it literally impossible for you to see the critical flaws in your own website messaging.</p>
+            <p>Want to know what happened next in David's case?</p>
+            <p>During our call, I walked him through the DIY Copy Blindspot Detector process. In just 45 minutes, we identified <span class="text-negative">three critical conversion killers</span> in his copy that were invisible to him but painfully obvious to his potential customers.</p>
+            <p>David implemented the changes the next day, though not without some hesitation. "These changes feel strange," he admitted. <strong>"I've been so focused on features and specs...talking about emotions this directly feels uncomfortable."</strong></p>
+            <p>That's precisely how I knew we were on the right track.</p>
+            <p>Two days later, he texted me a screenshot of his Shopify dashboard: <span class="text-positive">3 sales in one day</span>—more than he'd had in the previous week. A week later, <span class="text-positive">7 more sales</span>. By day 21, his conversion rate had jumped from <span class="text-negative">0.6%</span> to <span class="text-positive">2.7%</span>.</p>
+            <p>I still have the voicemail he left me that day.</p>
+             <blockquote>"Dinan, I just checked my weekly numbers. <strong>This is working. Really working.</strong> Same traffic. Same ad spend. Same products. Just dramatically different copy. For the first time in months, I slept through the night."</blockquote>
+            <p>The first week brought cautious hope. The second week showed consistent progress. But by the third week, <strong>something fundamental had shifted.</strong> David wasn't just seeing better metrics—his entire relationship with his business had transformed.</p>
+            <p>Sixty days later, David sent me a video that made my day. It was 6:30 AM, and he was in his kitchen making coffee. His phone buzzed with Shopify notifications—not one or two sales, but <span class="text-positive">seven overnight orders</span>.</p>
+            <p>"Remember those 3 AM panic attacks?" he said to the camera. "They're gone. Last night I slept eight hours straight. This morning, instead of calculating how many days until bankruptcy, <strong>I'm planning our first warehouse expansion.</strong>"</p>
+            <p>Deep sleep. Easy breathing. The nightmare replaced by possibility.</p>
+            <p>The contrast with the David I'd first spoken to couldn't be more stark. Same person. Same products. Same traffic sources. <strong>Just dramatically different copy that eliminated his blindspots.</strong></p>
+            <p>When I reviewed David's case notes, I realized something important: his situation wasn't personal or unique. <strong>The pattern was structural</strong>—the same invisible barriers that nearly destroyed his business are likely affecting yours right now.</p>
+            <p>In fact, when David first reached out, he said something I've since heard hundreds of times:</p>
+            <div class="pull-quote">
+                <p>"I feel like I'm missing something obvious, <strong>but I can't see what it is.</strong>"</p>
+            </div>
+            <p>That feeling—of knowing something's wrong but being unable to identify it—is the <strong>first symptom of Copy Blindness.</strong></p>
+        </section>
+
+        <section class="intro-block">
+            <p>Why am I telling you this? Because if you're reading this, there's a good chance <strong>you're experiencing the same pattern as David.</strong> You're driving traffic, people are showing interest, but something is breaking the sales momentum at the critical moment.</p>
+            <p>And like David, <strong>you probably have Copy Blindspots you literally cannot see on your own.</strong></p>
+            <p>Let me show you what I've discovered about why this happens and how the <strong>DIY Copy Blindspot Detector works...</strong></p>
+        </section>
+
+        <section class="problem-symptoms">
+            <h2>"What Am I Doing Wrong?" The Painful Truth About E-commerce Conversion</h2>
+            <p>Are you experiencing <strong>any of these symptoms</strong> in your store right now?</p>
+            <ul class="problem-list">
+                <li>Conversion rate <strong class="text-negative">under 2%</strong> (when you'd "absolutely kill for even a 2% CR")</li>
+                <li>Going <strong class="text-negative">5+ days with zero sales</strong> (and it's "killing you")</li>
+                <li>Watching your ad budget burn without a corresponding uptick in sales</li>
+                <li>When days go by without a sale, <strong class="text-negative">lying awake at night</strong> imagining having to shut down your site</li>
+                <li>Visitors adding products to cart but <strong class="text-negative">abandoning at checkout</strong></li>
+                <li>Ad campaigns that start strong but <strong class="text-negative">quickly fizzle out</strong></li>
+                <li>Customer feedback that your product is "better than expected" (This sounds good, but means <strong class="text-negative">your copy isn't setting the right expectation!</strong>)</li>
+            </ul>
+            <p>If you nodded to ANY of these, there's an <strong class="text-negative">83% chance</strong> you have the same condition David had: <strong>Copy Blindspots that are sabotaging your conversion rate.</strong></p>
+            <p>The most painful part? <strong>These blindspots are completely invisible to you.</strong></p>
+            <p>Let that sink in for a moment.</p>
+            <p>The same traffic. The same products. The same store.<br/><strong>Just different words on the screen.</strong></p>
+        </section>
+
+        <section>
+            <h2>Why Most Store Owners Can't See Their Own Copy Problems</h2>
+            <p>My research revealed a simple truth: <strong>the more you know about your product, the worse you are at selling it.</strong></p>
+            <p><strong>This isn't your fault.</strong></p>
+            <p>It's what psychologists call the <strong>"Curse of Knowledge"</strong> – once you understand something deeply, you can't remember what it was like not to know it.</p>
+            <p>But here's what's fascinating – when I analyzed the top 10% of converting stores against the bottom 10%, I discovered a shocking pattern. The highest-converting store owners all shared one unexpected habit that the struggling stores didn't. I'll reveal exactly what this habit is when we discuss the implementation process, but it <strong>completely transforms how you'll approach your copy</strong> from now on.</p>
+            <p>Think about it:</p>
+            <ul>
+                 <li>You've spent months perfecting your supplement formula with precise adaptogens.</li>
+                 <li>You know every ingredient and benefit by heart.</li>
+                 <li>You deeply understand the science behind your wellness product.</li>
+            </ul>
+            <p>But your visitors? <strong>They're seeing your store for the first time.</strong> They don't care about technical specs or milligrams of ingredients. They want <span class="text-positive">solutions to their problems</span> – fast and simple.</p>
+            <p>This gap creates <strong>three blindspots</strong> that are killing your sales:</p>
+
+            <hr class="subtle-hr">
+
+            <h3>Blindspot #1: The Feature-Benefit Confusion</h3>
+            <p>David's pages were packed with ingredients, specifications, and features. <strong>He was proud of these details.</strong></p>
+            <p>But customers weren't buying ingredients. <strong>They wanted transformation.</strong></p>
+            <p>"I don't believe it," David said after our call. He showed me his analytics screen.</p>
+            <p>"Look at this spike." He pointed to a sharp upward line. <strong>"That happened when we changed just the product description."</strong></p>
+            <p>One small change. <strong>One dramatic result.</strong></p>
+            <p>When I studied his visitors' behavior, I found the problem: people read his detailed descriptions but didn't buy. Why? <strong>David answered questions nobody was asking.</strong></p>
+            <p>His copy focused on WHAT the product was. <strong>Not WHY anyone should care.</strong></p>
+            <p>This blindspot explains why many store owners blame their <span class="text-negative">"low quality traffic"</span> when the real problem is copy that <strong>fails to connect features to feelings.</strong></p>
+            <blockquote>
+                "I spent 6 months perfecting my supplement formula with precise adaptogens. My copy talked about science and ingredients. After Dinan's audit, we focused on how customers would FEEL instead. <strong>Conversion jumped from <span class="text-negative">0.9%</span> to <span class="text-positive">2.6%</span> in two weeks.</strong>"
+                <br>— Sarah J., Wellness Supplements Founder
+            </blockquote>
+
+            <hr class="subtle-hr">
+
+            <h3>Blindspot #2: The Implicit Assumption Gap</h3>
+            <p>The second blindspot appears in <strong class="text-negative">91%</strong> of struggling stores: <strong>assuming visitors understand your product as well as you do.</strong></p>
+            <p>David laughed when I showed him this blindspot. "That jargon has been on my site for two years. <strong>How did I never notice normal people don't talk that way?</strong>"</p>
+            <p>Short sentences.<br>Bold claims.<br>Undeniable results.</p>
+            <p>David's copy used industry terms and skipped explaining why his solution worked. <strong>He assumed visitors already understood the problem</strong> like he did.</p>
+            <p>When I interviewed his actual customers, I discovered they used completely different language to describe their needs. <strong>His website was literally speaking a different language.</strong></p>
+            <p>This explains why your ads get clicks but your website doesn't convert. Your traffic is fine – your messaging <strong>misses crucial context</strong> that bridges from interest to purchase.</p>
+
+            <hr class="subtle-hr">
+
+            <h3>Blindspot #3: The Trust Sequence Violation</h3>
+            <p>The third blindspot kills sales instantly: presenting information in an order that <strong>breaks trust.</strong></p>
+            <p>What shocked David most? Not the solution. But <strong>how obvious it seemed once revealed.</strong></p>
+            <p>When I analyzed his site, I found the problem. <strong>He asked for the purchase before building credibility.</strong> His homepage jumped from problem to solution without proving understanding.</p>
+            <p><strong>This is like proposing on the first date.</strong> It feels rushed. It creates resistance.</p>
+            <p>In studying <span class="text-positive">127</span> failing stores, I found this pattern everywhere: <strong>visitors need to feel understood *before* considering your solution.</strong> Break this sequence, and they leave – no matter how great your product is.</p>
+            <p>There's also a <strong>fourth blindspot</strong> I've only recently documented in my research. It's so subtle that <strong class="text-negative">94%</strong> of store owners miss it entirely, yet fixing it alone boosted average order value by <span class="text-positive">31%</span> in my latest case studies. I'll share the exact framework for identifying and fixing this blindspot when we discuss the implementation guide.</p>
+        </section>
+
+        <section>
+            <h2>Why Your Previous Efforts Haven't Fixed This Problem</h2>
+            <p>You've likely tried many approaches:</p>
+             <ul class="attempt-list">
+                <li><strong>DIY Copy:</strong> You wrote it yourself. As the founder, you know your product best... but <strong>something's still off.</strong></li>
+                <li><strong>AI Tools:</strong> ChatGPT gave <strong>generic, soulless text</strong> that sounds like everyone else.</li>
+                <li><strong>Conversion Hacks:</strong> Trust badges, timers, free shipping. Brief spikes, then <strong>back to dismal results.</strong></li>
+                <li><strong>More Traffic:</strong> Burning ad budget faster <strong>without fixing the underlying conversion problem.</strong></li>
+            </ul>
+            <p>These approaches fail because they miss the root cause: <strong>psychological blindspots</strong> that make it impossible for you to see what's missing in your own messaging.</p>
+            <p>You know the cycle. Try something new. Brief improvement. Back to baseline. Repeat. <strong>Exhausting.</strong></p>
+            <blockquote>
+                "I tried EVERYTHING – redesigned my site, added trust badges, hired cheap copywriters. Nothing worked. What Dinan found in my copy was something I never would have seen myself. <strong>My conversion jumped from <span class="text-negative">1.2%</span> to <span class="text-positive">3.5%</span> in 18 days.</strong>"
+                <br>— Lisa R., Wellness Supplements Founder
+            </blockquote>
+
+            <hr class="subtle-hr">
+
+            <p><strong>Let's look deeper at why these approaches fail, especially the two most common paths: AI and DIY.</strong></p>
+
+            <h3>The AI Copy Trap: Why Technology Can't Solve a Human Problem</h3>
+            <p>AI seems perfect: quick, affordable, professional-sounding.</p>
+            <p>But AI fundamentally lacks the <strong>emotional intelligence</strong> to understand your unique brand story and customer desires.</p>
+            <p>It can't interview your customers. It can't feel the transformation your product creates. <strong>It can't detect subtle emotional triggers.</strong></p>
+            <p>Consider this:</p>
+            <div class="example">
+                 <p><strong>Before (AI-Generated):</strong> "Our proprietary blend contains clinically-studied adaptogens that help modulate cortisol levels and support stress response."</p>
+                 <p><strong>After (Human Expert):</strong> "Picture this: It's 10PM. You're finally in bed after a chaotic day. But instead of sleeping, your mind keeps racing... Our formula changes that story—within 30 minutes, that mental chatter quiets down, your shoulders relax, and <strong>you drift into the deep sleep you desperately need.</strong>"</p>
+            </div>
+            <p>The first tells. <strong>The second *sells* by creating an experience.</strong></p>
+            <p>My research shows AI consistently <strong>underperforms human copy</strong> on key psychological triggers. As one founder put it: "My AI copy was grammatically perfect but <span class="text-negative">completely soulless</span>."</p>
+            <p>This explains why your site might *look* professional but still doesn't *convert*. <strong>The words don't connect emotionally.</strong></p>
+
+            <hr class="subtle-hr">
+
+            <p><strong>But if AI fails, surely you can fix it yourself, right?</strong></p>
+
+            <h3>From DIY Pride to Strategic Leadership: When to Stop Doing Everything Yourself</h3>
+            <p>The most successful founders I work with <strong>don't try to do everything themselves.</strong></p>
+            <p>They understand that delegating specialized tasks isn't weakness—<strong>it's smart business.</strong></p>
+            <p>You *feel* like you should be able to write your own copy. You know your product best. You're smart, capable.</p>
+            <p>But professional copywriting isn't just product knowledge—it's <strong>conversion psychology</strong>. It's a specialized skill like accounting or design.</p>
+             <p>Would you formulate your supplement without a biochemist? Design your logo without design skills?</p>
+            <p>Your DIY copy got you this far. Commendable. But scaling requires messaging that <strong>converts cold traffic at <span class="text-positive">2-3X</span> your current rate.</strong></p>
+             <p>You worry about the cost. When reinvesting profits and paying yourself minimally, <strong>every investment needs clear ROI.</strong></p>
+            <p>That's why this isn't just "writing." It's <strong>diagnosing specific conversion blocks</strong> based on proven patterns.</p>
+            <p><strong>The solution?</strong> A systematic diagnostic approach combining human expertise with conversion patterns.</p>
+        </section>
+
+        <section class="solution" style="background-color: #f0f9ff; border-left: 5px solid #38bdf8; border-radius: 4px;">
+            <h2>The DIY Copy Blindspot Detector: How It Actually Works</h2>
+            <p>After studying <span class="text-positive">127</span> struggling stores, I created a system to fix these problems. This isn't about "better copy" – it's about <strong>removing specific barriers that block sales.</strong></p>
+            <p>The process is simple:</p>
+            <ol>
+                <li><strong>Detection:</strong> I find your specific blindspots using proven patterns from 127 store analyses.</li>
+                <li><strong>Correction:</strong> We rewrite key messages using your customers' actual language and psychological triggers.</li>
+                <li><strong>Implementation:</strong> You make the targeted changes and <strong>watch sales climb.</strong></li>
+            </ol>
+             <p>Imagine putting on glasses that suddenly reveal what's been invisible. <strong>"So THAT'S why people aren't buying!"</strong> moments happen within minutes.</p>
+            <p>The results speak for themselves:</p>
+             <ul class="results-list">
+                <li>Average conversion rate increase: <strong class="text-positive">237%</strong> (proven across 32 niches)</li>
+                <li>Average revenue boost: <strong class="text-positive">$11,345/month</strong> (from $3,200 to $27,500)</li>
+                <li>Average time to results: <strong>Just <span class="text-positive">17 days</span></strong> (some see changes in 48 hours)</li>
+            </ul>
+            <p>Why such dramatic results? Most stores make <span class="text-negative">3-5 critical messaging mistakes</span>. <strong>Fix them all, and sales multiply.</strong></p>
+         </section>
+         <section class="example-section">
+             <h3>Real Examples: Blindspots Uncovered & Fixed</h3>
+             <h4>Example #1: Wellness Supplement Store (Sarah's Case)</h4>
+            <div class="example">
+                <p><strong>Before:</strong> "Our supplements contain 500mg of premium ashwagandha and 350mg of rhodiola rosea for maximum efficacy."</p>
+                <p><strong>After:</strong> "Finally fall asleep without your mind racing, wake up refreshed, and handle work stress without that knot in your stomach – <strong>all from a simple capsule you take once daily.</strong>"</p>
+            </div>
+            <p>See the difference? <strong>Features vs. Transformation.</strong> Sarah's customers cared about sleep, not milligrams.</p>
+
+            <h4>Example #2: Monthly Subscription Box (Trust Sequence Fix)</h4>
+            <div class="example">
+                <p><strong>Before:</strong> "Try our 30-day supply with a money-back guarantee." (<span class="text-negative">Generic, skeptical</span>)</p>
+                <p><strong>After:</strong> "Experience what customers call <strong>'the 3-day difference'</strong> – the moment on day 3 when you suddenly realize you haven't felt anxious all day. If you don't feel it by day 7, we'll refund every penny." (<span class="text-positive">Specific, builds confidence</span>)</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Are These Results Really Possible... Just From Copy?</h2>
+            <p>Yes. Think about it: Your visitors already showed interest. They clicked your ads. They browsed your site. <strong>They're *ready* to buy</strong> – they just need the right message to cross the finish line.</p>
+            <p>This isn't magic. It's <strong>fixing specific communication barriers you can't see yourself.</strong></p>
+            <p>The dramatic results come because most store owners have <strong>*never* had their copy properly diagnosed.</strong> It's like getting the right glasses after years of blurry vision.</p>
+            <p><strong>What blindspots lurk in your copy?</strong> What would <strong class="text-positive">2-3x higher conversion rates</strong> mean for your business?</p>
+        </section>
+
+        <section class="offer">
+            <h2>Introducing: The Diagnostic-First Website Conversion Audit</h2>
+            <p>Most solutions jump to fixes without diagnosing the real problem. <strong>It's like taking medicine without knowing the illness.</strong></p>
+            <p><strong>My approach is different: Diagnose First.</strong> I identify *exactly* where and why your copy fails before suggesting changes.</p>
+            <p>This sets my process apart from generic copywriters, CRO consultants tweaking buttons, and expensive agencies with template solutions.</p>
+            <p>I focus on one thing: <strong>finding and fixing the psychological blindspots blocking your sales.</strong></p>
+
+            <div class="package-details">
+                <h3>What You Get: The Complete Copy Blindspot Detector Package</h3>
+                <p>Refined over 3 years and <span class="text-positive">127 stores</span>, here's the complete diagnostic package:</p>
+                <ul>
+                    <li><strong>1. Website Copy Audit</strong> (<span class="text-positive">$497 value</span>)<br>Analysis against proven blindspot patterns (product pages, homepage, checkout). Research identifies language disconnects.</li>
+                    <li><strong>2. Blindspot Mapping Call</strong> (<span class="text-positive">$297 value</span>)<br>60-min session revealing your specific blindspots with custom before/after examples for *your* products.</li>
+                    <li><strong>3. Voice Calibration Session</strong> (<span class="text-positive">$197 value</span>)<br>30-min call ensuring changes enhance, not replace, your authentic brand voice (friendly, empathetic, science-backed).</li>
+                    <li><strong>4. Implementation Guide</strong> (<span class="text-positive">$147 value</span>)<br>Step-by-step, prioritized plan for fastest results (perfect for a 3-4 week timeline).</li>
+                    <li><strong>5. Ad Message Alignment Check</strong> (<span class="text-positive">$97 value</span>)<br>Review of ad copy for consistency with new site messaging. Stop the ad-to-site disconnect.</li>
+                    <li><strong>6. Before & After Metrics Template</strong> (<span class="text-positive">$47 value</span>)<br>Simple tracking system to measure impact and document improvements.</li>
+                    <li><strong>7. 30-Day Implementation Support</strong> (<span class="text-positive">$197 value</span>)<br>Check-ins (Days 7, 14, 30) & email support for questions and fine-tuning.</li>
+                </ul>
+            </div>
+
+            <div class="value-price">
+                <p>Total Value: <span style="text-decoration: line-through; color: #a0aec0;">$1,482</span></p>
+                <p>Your Investment Today: <strong style="color: #2b6cb0; font-size: 1.5em;">$297</strong></p> {/* Keeping price blue for emphasis as requested */}
+            </div>
+
+            <h3>Why Only $297 for <span class="text-positive">$1,482</span> Value?</h3>
+            <p>1. <strong>Efficiency:</strong> My process is highly optimized after 127 cases. Systems allow me to deliver exceptional value faster.<br/>
+               2. <strong>Accessibility:</strong> I understand tight budgets. Priced for businesses like David's needing results fast. <strong>I prioritize helping more founders over maximizing fees.</strong></p>
+            <p>Yes, cheap freelancers guess. This is different: <strong>Diagnostic First, then Precise Fixes.</strong> It's less than <span class="text-negative">2-3 days</span> of typical ad spend for a solution that makes that spend *work*.</p>
+
+            <h3>The Undeniable ROI Math</h3>
+            <p>If you spend <span class="text-negative">$3,000/mo</span> on ads at <span class="text-negative">0.6% CR</span> = ~18 customers.<br/>
+               Improving to just <span class="text-positive">2% CR</span> = 60 customers (<strong>+ <span class="text-positive">42</span> customers/mo</strong>) from the SAME ad spend.<br/>
+               With <span class="text-positive">$85 profit/customer</span> = Extra <strong class="text-positive">$3,570</strong> monthly profit.<br/>
+               Your <span class="text-positive">$297</span> investment pays for itself in <strong>~3 days</strong>, delivering <strong class="text-positive">~$42,000+</strong> extra annual profit.</p>
+             <p><strong>The question isn't "Can I afford this?" It's "Can I afford *not* to fix this?"</strong></p>
+             <div class="cta-center">
+                 <a href="#schedule-link-placeholder" class="cta-button">SCHEDULE YOUR AUDIT NOW → $297</a>
+             </div>
+        </section>
+
+        <section class="guarantee">
+            <h3>My Blindspot Detection Performance Guarantee</h3>
+             {/* Icon added via CSS ::before */}
+            <p>After your audit, I'll give you a specific conversion rate prediction range (e.g., "<span class="text-negative">0.7%</span> to between <strong class="text-positive">1.8-2.3%</strong> within 30 days") based on your niche and blindspot severity.</p>
+            <p><strong>If you implement the changes and don't see movement within that range by day 30, I'll provide a complete follow-up audit <span class="text-positive">FREE</span> to identify what's missing.</strong></p>
+            <p>This isn't a money-back guarantee – <strong>it's better.</strong> It's my commitment to ending your "zero sales" days and 3 AM panic-checks.</p>
+            <p><strong>Clear, measurable outcomes.</strong></p>
+        </section>
+
+        <section class="future-pacing" style="background-color: #f0fff4; border-left: 5px solid #68d391; border-radius: 4px;">
+            <h2>What Your Business Looks Like 30 Days From Now</h2>
+            <p>Picture this: Waking up, checking your phone, feeling <strong class="text-positive">excitement</strong>, not anxiety.</p>
+             <p>Seeing <strong class="text-positive">5, 6, 7+ new order notifications daily.</strong> Imposter syndrome fading. Your dashboard showing a steady <strong class="text-positive">2.8% CR.</strong></p>
+             <p>The same ads now <strong>*fill* your bank account</strong> instead of draining it. No more late-night panic. Planning expansion, not calculating bankruptcy.</p>
+             <p>Messaging your supplier to increase your order. Finally realizing the dream: a <strong>thriving wellness business</strong> providing personal and financial fulfillment.</p>
+             <p>The same ads now <strong>*fill* your bank account</strong> instead of draining it. No more late-night panic. Planning expansion, not calculating bankruptcy.</p>
+             <p>Planning expansion, not calculating bankruptcy.</p>
+             <p>The contrast with the David I'd first spoken to couldn't be more stark. Same person. Same products. Same traffic sources. <strong>Just dramatically different copy that eliminated his blindspots.</strong></p>
+            <p>This isn't fantasy – it's what David and <span class="text-positive">126 others</span> experienced.</p>
+            <blockquote>"The best part wasn't even the money. <strong>It was finally sleeping through the night</strong>, knowing my business was solid." — Audit Client</blockquote>
+        </section>
+
+        <section class="differentiation">
+            <h2>What Makes This Different?</h2>
+            <ol>
+                <li><strong>Tailored, Not Templated:</strong> Specific diagnosis for *your* store, not cookie-cutter formulas.</li>
+                <li><strong>Collaborative, Not Controlling:</strong> We enhance *your* brand voice; you maintain final approval.</li>
+                <li><strong>Measurable, Not Mysterious:</strong> Clear metrics, clear timeline (results typically start in <span class="text-positive">7-14 days</span>).</li>
+                <li><strong>Diagnostic Before Prescriptive:</strong> Understand *why* before prescribing *what*.</li>
+                <li><strong>Proven, Not Theoretical:</strong> Refined across <span class="text-positive">127 stores</span>, 32 niches.</li>
+            </ol>
+            <p>"But will it work for *ME*?"</p>
+        </section>
+
+        <section class="paths">
+            <h2>The Three Paths Forward: Choose Wisely</h2>
+            <p>You're at a decision point. <strong>Which path will you take?</strong></p>
+            <ul>
+                <li class="path-diy">
+                    <h4>Path #1: The DIY Approach (Comfortable Guesswork)</h4>
+                    <p>You try implementing these ideas yourself. You're scrappy, you built this! But a month later, <strong>CR hasn't budged.</strong> You're playing conversion whack-a-mole because <span class="text-negative">you can't see your own blindspots.</span></p>
+                    <p>Meanwhile, ad spend keeps draining. The DIY approach costs more in <strong>wasted ads and lost time</strong> than getting expert diagnosis.</p>
+                    <p><strong><span class="text-negative">Comfortable, but costly.</span></strong></p>
+                </li>
+                <li class="path-status-quo">
+                    <h4>Path #2: The Status Quo (Slow Decline)</h4>
+                    <p>You close this page. Tomorrow looks like yesterday: <span class="text-negative">disappointing analytics</span>, hoping things improve, stress about unpredictable revenue.</p>
+                    <p>Six weeks later, competitors thrive while you struggle. Savings dwindle. You're calculating how long until <strong class="text-negative">tough decisions are forced.</strong></p>
+                    <p><strong><span class="text-negative">Easy in the short term, potentially fatal long term.</span></strong></p>
+                </li>
+                <li class="path-expert">
+                    <h4>Path #3: The Expert Diagnosis (Strategic Action)</h4>
+                    <p>You schedule your audit. We pinpoint your specific conversion barriers using proven patterns. You get a <strong>precise diagnosis and tailored plan.</strong></p>
+                    <p>Within <span class="text-positive">7-14 days</span>, conversions climb sustainably. Anxiety turns to anticipation. By day 30, CR has doubled or tripled, turning the <strong>same ad spend into <span class="text-positive">2-4X revenue</span>.</strong></p>
+                    <p><strong>A small investment backed by a guarantee, leading to <span class="text-positive">significant, predictable growth.</span></strong></p>
+                </li>
+            </ul>
+            <hr class="subtle-hr"> {/* Added separator */}
+            <p>Success often comes from leveraging specialized expertise, <strong>not expensive guesswork.</strong></p>
+            <p>Which story will become yours?</p>
+             <div class="cta-center">
+                 <a href="#schedule-link-placeholder" class="cta-button">TAKE PATH #3: SCHEDULE MY AUDIT → $297</a>
+             </div>
+        </section>
+
+        <section id="schedule" class="final-cta">
+            <h2>Frequently Asked Questions</h2>
+            {/* Consider adding JS for accordion functionality */}
+            <dl class="faq">
+                <dt>Will this work for my wellness/supplement business?</dt>
+                <dd><strong>Absolutely.</strong> Wellness/supplements are a core focus, often seeing dramatic improvements due to the need to bridge complex ingredients to emotional benefits.</dd>
+
+                <dt>Will you really understand my brand voice?</dt>
+                <dd><strong>Yes.</strong> The Voice Calibration Session ensures we enhance, not replace, your friendly, empathetic, science-backed tone. Authenticity is key.</dd>
+
+                <dt>How soon will I see results?</dt>
+                <dd>Measurable improvements typically within <strong class="text-positive">7-14 days</strong>. Full effect average: 17 days. Perfect for a tight timeline.</dd>
+
+                <dt>What if I've already tried hiring a copywriter?</dt>
+                <dd>Many clients have. This is <strong>diagnostic-first</strong>, finding *specific psychological barriers* missed by general writers.</dd>
+
+                <dt>What if I'm hesitant about the cost?</dt>
+                <dd>Consider the cost of *not* fixing this. Redirecting <span class="text-negative">2-3 days</span> of non-converting ad spend often covers it, yielding far higher ROI.</dd>
+
+                <dt>Do I need technical skills?</dt>
+                <dd><strong>No.</strong> Changes are made in your standard Shopify editor. Guidance provided.</dd>
+
+                <dt>What happens immediately after I book?</dt>
+                <dd>Within <strong class="text-positive">24hrs</strong>: Quick pre-audit questionnaire & link to book your call time. Efficient process.</dd>
+
+                <dt>What if I need to discuss this with a partner?</dt>
+                <dd>Understood. With only <span class="text-negative">4 spots left</span>, secure yours now (schedule call later). <strong>Full refund within 24hrs</strong> if needed before audit starts.</dd>
+            </dl>
+        </section>
+
+        <section class="cta-center">
+             <h2>Here's Exactly What Happens Next:</h2>
+             <ol class="steps-list">
+                 <li class="step-item">Click the button below & select your call time.</li>
+                 <li class="step-item">Complete the <strong>5-minute</strong> pre-audit questionnaire.</li>
+                 <li class="step-item">I analyze your site using the Blindspot Detector.</li>
+                 <li class="step-item">We meet (60min) to reveal your specific blindspots.</li>
+                 <li class="step-item">Receive your implementation plan & 30-day support.</li>
+                 <li class="step-item">Start seeing results in <strong class="text-positive">7-14 days</strong>.</li>
+             </ol>
+             <p>Simple, straightforward, respectful of your time.</p>
+
+             <h2>Your Choice: Continue Guessing or Start Converting?</h2>
+
+             <div class="decision-columns">
+                 <div class="decision-column costs">
+                     <h4>The High Cost of Waiting</h4>
+                     <ul>
+                         <li>Continue losing customers you paid to attract.</li>
+                         <li>Keep missing dozens of sales for every 1,000 visitors.</li>
+                         <li>Waste thousands more in ad spend each week/month.</li>
+                         <li>Face ongoing stress and uncertainty about revenue.</li>
+                         <li>Risk competitors pulling further ahead.</li>
+                     </ul>
+                 </div>
+                 <div class="decision-column benefits">
+                     <h4>The Smart Investment in Growth</h4>
+                     <ul>
+                         <li>Pinpoint the *exact* reasons visitors aren't buying.</li>
+                         <li>Implement targeted copy fixes based on proven patterns.</li>
+                         <li>Typically see <span class="text-positive">2-3x+ conversion lift</span> within 30 days.</li>
+                         <li>Turn the same ad spend into significantly more revenue.</li>
+                         <li>Gain clarity, confidence, and predictable growth.</li>
+                     </ul>
+                     <p class="investment-price">Your One-Time Investment: $297</p>
+                 </div>
+             </div>
+
+             <p class="urgency-notice">Only <span class="text-negative">4</span> audit spots remain this month at $297. After that, the investment returns to $497.</p>
+
+             <a href="#schedule-link-placeholder" class="cta-button">SECURE MY $297 AUDIT SPOT NOW</a>
+         </section>
+
+        <section class="ps">
+            <p><strong>P.S.</strong> Beyond conversions: <strong class="text-positive">Peace of mind.</strong> Imagine sleeping soundly, knowing your business is solid. That mental clarity alone is invaluable.</p>
+            <p><strong>P.P.S.</strong> "I wish I'd done this six months earlier." – The #1 comment I hear. Sarah J. spent <span class="text-negative">$4.2k</span> on ads for minimal return. The month after her audit, the *same* ad spend generated <strong class="text-positive">$18.7k</strong>. Undeniable ROI.</p>
+            <p><strong>P.P.P.S.</strong> Only <span class="text-negative">4 spots left</span>. Secure yours now (2 mins), schedule the call later. Don't wait another day while leaky copy costs you thousands.</p>
+        </section>
+
+         <section class="intro-block">
+             <p><strong>Bottom Line:</strong></p>
+             <p>I diagnose why visitors aren't converting, show you what to fix, and guide implementation for typical <strong class="text-positive">2-3X CR increases</strong> within 30 days—just by adjusting words, not redesigning.</p>
+             <p>If you're driving traffic but sales stall, <strong>you likely have Copy Blindspots you can't see.</strong></p>
+             <p>Let me reveal them and provide the path to fixing them.</p>
+             <div class="cta-center">
+                <a href="#schedule-link-placeholder" class="cta-button">YES, I WANT TO FIX MY BLINDSPOTS → $297</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; Dinan Nguyen 2025. All Rights Reserved.</p> 
+            {/* <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> */}
+        </footer>
+    </div>
+
+    {/*
+    <script>
+        document.querySelectorAll('.faq dt').forEach(item => {
+            item.addEventListener('click', event => {
+                const answer = item.nextElementSibling;
+                item.classList.toggle('active');
+                answer.classList.toggle('active');
+                if (answer.style.display === "block") {
+                    answer.style.display = "none";
+                } else {
+                    answer.style.display = "block";
+                }
+            });
+        });
+    </script>
+     */}
+</body>
+</html> 
